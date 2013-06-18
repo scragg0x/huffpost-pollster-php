@@ -28,7 +28,7 @@ class Pollster {
             $endpoint .= "/" . $state;
         }
         else if ($topic){
-            $endpoint .= "/" . $state;
+            $endpoint .= "/" . $topic;
         }
         return $this->get($endpoint);
     }
