@@ -12,7 +12,7 @@ class Pollster {
     public $base_uri = 'http://elections.huffingtonpost.com/pollster/api';
 
     public function __construct($format = 'json'){
-        $this->client = new Guzzle\Http\Client($this->base_uri);
+        $this->client = new \Guzzle\Http\Client($this->base_uri);
         $this->format = $format;
     }
 
