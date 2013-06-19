@@ -33,7 +33,8 @@ class Pollster {
         return $this->get($endpoint);
     }
 
-    public function polls(){
-
+    public function polls($params = array()){
+        // http://elections.huffingtonpost.com/pollster/api#polls
+        return $this->get('/polls', $params);
     }
 }
